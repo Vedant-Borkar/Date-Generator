@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Date Generator</title>
+  <style>
+    *{
+      background-color: rgb(70, 69, 69);
+      color: white;
+    }
+    input{
+      color:white
+    }
+  </style>
+</head>
+<body>
+  <script src="script.js"></script>
+
+  <h1 style="font-family: chiller;text-align: center;font-size: 60px;color: rgb(147, 227, 27);">Date Generator</h1>
+  <h2 style="text-align: center;">Enter Valid date in DD/MM/YYYY Format</h2>
+  <label for="Date" style="padding-left: 16%;position: absolute;font-size: larger;">Enter Start Date:</label>
+  <label for="Date" style="padding-left: 25%;">DD:</label>
+  <input type="number" id="DD" placeholder="DD" style="width: 2.5%;">
+  <label for="Date" >MM:</label>
+  <input type="number" id="MM" placeholder="MM" style="width: 2.5%;">
+  <label for="Date" >YYYY:</label>
+  <input type="number" id="YYYY" placeholder="YYYY" style="width: 3.5%;">
+
+  <label for="days" >Days:</label>
+  <input type="number" id="days">
+  <button onclick="dateGenerator()">SUBMIT</button>
+
+  <p>
+
+  <label for="Date" style="padding-left: 19%;position: absolute;font-size: larger;">Final Date:</label>
+
+  <label for="Date" style="padding-left: 25%;">DD:</label>
+  <input type="text" id="FD" placeholder="DD" style="width: 2.5%;" readonly>
+  <label for="Date" >MM:</label>
+  <input type="text" id="FM" placeholder="MM" style="width: 2.5%;" readonly>
+  <label for="Date" >YYYY:</label>
+  <input type="text" id="FY" placeholder="YYYY" style="width: 3.5%;" readonly>
+</body>
+</html>
